@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviePedia</title>
+    <link rel="icon" type="image/x-icon" href="https://i.pinimg.com/564x/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg">
+
+    <!-- Fontawesome link -->
+    <script src="https://kit.fontawesome.com/6766d78bed.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar starts -->
+    <nav>
+        <a id="logo" href="#">
+            <img src="https://i.pinimg.com/564x/0c/32/97/0c3297f3516a415219c7e89e16a4a3d2.jpg" alt="logo" style="height: 40px; width:40px; margin-right: 10px;">
+            <h2><span style="color:rgb(11, 224, 224)">MoviePedia</span></h2>
+        </a>
+        <a id="favourites" href="favorites.html"><i style="color: crimson;" class="fa-solid fa-heart"></i> Favourites</a>
+
+    <!-- Navbar ends -->
+
+    <!-- Search section starts -->
+    <div id="search-container">
+        <input id="search-box" class="searchBox" type="text" placeholder="Search Movie Title" onkeyup="findMovies()"
+            onclick="findMovies()">
+        <!-- Search list starts -->
+        <div id="search-list">
+            <!-- <div class="search-list-item">
+                    <div class="thumbnail">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZDA0OGQxNTItMDZkMC00N2UyLTg3MzMtYTJmNjg3Nzk5MzRiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+                            alt="movie poster">
+                    </div>
+                    <div class="search-item-info">
+                        <h3>Avatar</h3>
+                        <p>2009</p>
+                    </div>
+                </div> -->
+        </div>
+
+    </nav>
+        <!-- Search list ends -->
+    </div>
+    <!-- Search section ends -->
+
+    <!-- Result container starts -->
+    <div id="result-container">
+        <div id="result">
+            <!-- Movie Information -->
+
+            <div class="poster">
+                <img class="movie-poster" src="https://m.media-amazon.com/images/M/MV5BMTMwMDM4N2EtOTJiYy00OTQ0LThlZDYtYWUwOWFlY2IxZGVjXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg"
+                    alt="movie poster">
+            </div>
+            <div class="movie-info">
+                <h3 class="movie-title">Jujutsu kaisen</h3>
+                <ul class="movie-misc-info">
+                    <li class="year"><b>Year:</b> 2020</li>
+                    <li class="rating"><b>Rating: PG-13</b></li>
+                    <li class="released"><b>Released:</b> 02 Oct 2020</li>
+                </ul>
+                <p class="genre"><b>Genre:</b> Animation, Action, Adventure</p>
+                <p class="director"><b>Director:</b> N/A</p>
+                <p class="actors"><b>Actors:</b> Junya Enoki, Yuma Uchida, Yûichi Nakamura</p>
+                <p class="plot"><b>Plot:</b>A boy swallows a cursed talisman - the finger of a 
+                    demon - and becomes cursed himself. He enters a shaman's school to be able to 
+                    locate the demon's other body parts and thus exorcise himself.</p>
+                <p class="language"><b>Language:</b> Japanese</p>
+                <p class="awards"><b><i style="color: rgb(8, 150, 194);" class="fas fa-award"></i></b> 18 wins & 23 nominations</p>
+            </div>
+        <button id="add-to-fav"><i class="fa-solid fa-heart"></i> Add to Favourites</button>
+
+
+
+    </div>
+       
+    
+
+    <!-- Result container ends -->
+
+ 
+
+    <!-- pagination -->
+    <div class="container">
+        <ul class="pagination">
+          <li>
+            <a href="#">Prev</a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li class="active">
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          
+          <li>
+            <a href="#">Next</a>
+          </li>
+        </ul>
+      </div>
+
+         <!-- Javascript  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
